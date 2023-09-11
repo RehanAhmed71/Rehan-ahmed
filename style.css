@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-button {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.equal-button {
+    background-color: #70db70;
+    color: white;
+}
+
+.plus-button {
+    background-color: #4285f4;
+    color: white;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+/* ... previous CSS code ... */
+
+button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* ... rest of the CSS code ... */
